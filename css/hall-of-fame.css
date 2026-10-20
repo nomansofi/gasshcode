@@ -1,0 +1,69 @@
+/* Hall of Fame — plain CSS fallback. Works with css/styles.css variables. */
+.hof-hero { display: flex; align-items: center; gap: 1.2rem; }
+.hof-hero img { width: 72px; height: 72px; border-radius: 18px; object-fit: cover; flex-shrink: 0; }
+.hof-hero h1 { margin-bottom: 0.4rem; }
+
+.hof-filters { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; margin-bottom: 2rem; }
+.hof-filter {
+  border: 1px solid var(--line); background: var(--bg-elevated); color: var(--muted);
+  border-radius: 999px; padding: 0.55rem 1rem; font-weight: 700; font-size: 0.9rem; cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+.hof-filter:hover { color: var(--text); transform: translateY(-1px); }
+.hof-filter:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
+.hof-filter.is-active { background: linear-gradient(135deg, var(--blue), var(--cyan)); color: #fff; border-color: transparent; box-shadow: 0 10px 24px rgba(37,99,235,.28); }
+.hof-count { margin-left: 0.35rem; background: rgba(148,163,184,.2); border-radius: 999px; padding: 0.05rem 0.45rem; font-size: 0.75rem; }
+.hof-filter.is-active .hof-count { background: rgba(255,255,255,.25); }
+
+.hof-grid {
+  list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.hof-grid.is-fading { opacity: 0; transform: translateY(8px) scale(0.98); }
+
+.hof-card {
+  display: flex; align-items: center; gap: 1rem; padding: 1rem;
+  background: var(--bg-elevated); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+.hof-card:hover { transform: translateY(-3px); border-color: var(--cyan); }
+.hof-card[hidden] { display: none; }
+.hof-info { min-width: 0; }
+.hof-info h3 { margin: 0 0 0.4rem; font-size: 1.05rem; }
+.hof-info p { margin: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+.hof-avatar {
+  width: 56px; height: 56px; border-radius: 50%; flex-shrink: 0; display: grid; place-items: center;
+  color: #fff; font-weight: 800; font-size: 1.05rem;
+}
+.hof-open { background: linear-gradient(135deg, #0ea5e9, #2563eb); }
+.hof-reserved { background: linear-gradient(135deg, #fbbf24, #f97316); }
+.hof-self { background: linear-gradient(135deg, #8b5cf6, #c026d3); }
+
+.hof-badge { font-size: 0.72rem; font-weight: 800; padding: 0.2rem 0.6rem; border-radius: 999px; }
+.hof-badge-open { background: rgba(14,165,233,.15); color: #0369a1; }
+.hof-badge-reserved { background: rgba(245,158,11,.16); color: #b45309; }
+.hof-badge-self { background: rgba(139,92,246,.15); color: #6d28d9; }
+.hof-badge-quota { background: rgba(100,116,139,.18); color: var(--muted); }
+[data-theme="dark"] .hof-badge-open { color: #7dd3fc; }
+[data-theme="dark"] .hof-badge-reserved { color: #fcd34d; }
+[data-theme="dark"] .hof-badge-self { color: #c4b5fd; }
+
+@media (max-width: 640px) {
+  .hof-grid { grid-template-columns: 1fr; }
+  .hof-hero { flex-direction: column; align-items: flex-start; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hof-grid, .hof-card, .hof-filter { transition: none; }
+}
+
+/* Compact selections block on the home page */
+.sel-head { display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; }
+.sel-head h3 { margin: 0; }
+.sel-count { min-width: 2rem; height: 2rem; display: grid; place-items: center; border-radius: 999px; background: rgba(37,99,235,.12); color: var(--blue); font-weight: 800; font-size: 0.9rem; }
+.sel-group > .muted { margin: 0.3rem 0 0.8rem; font-size: 0.9rem; }
+.sel-list { list-style: none; margin: 0; padding: 0; }
+.sel-item { display: flex; align-items: center; gap: 0.65rem; padding: 0.55rem 0; border-top: 1px solid var(--line); }
+.sel-avatar { width: 34px; height: 34px; font-size: 0.72rem; }
+.sel-name { font-weight: 700; font-size: 0.95rem; min-width: 0; }
+.sel-item .hof-badge { margin-left: auto; }

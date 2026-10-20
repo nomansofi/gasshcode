@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hall of Fame | GasshCode Academy</title>
+  <meta name="description" content="Hall of Fame: students selected after preparing at GasshCode Academy, Srinagar.">
+  <meta property="og:title" content="GasshCode Hall of Fame">
+  <meta property="og:description" content="Selections from GasshCode Academy, Srinagar.">
+  <meta name="theme-color" content="#0F172A">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/hall-of-fame.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announce" role="status">🚀 Admissions Open for Kashmir University Integrated Data Science &amp; AI / GATE 2027 Batches — Enroll Today! <a href="contact.html">Apply now</a></div>
+  <header class="header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="GasshCode Academy home">
+        <img src="assets/logo.png" alt="GasshCode Academy logo — light through logic" width="42" height="42">
+        <div>GasshCode Academy<span>Srinagar · Kashmir</span></div>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Programs</a>
+        <a href="demo.html">Demo Class</a>
+        <a href="index.html#syllabus">Syllabus</a>
+        <a href="about.html">About Us</a>
+        <a href="resources.html">Resources</a>
+        <a class="active" href="hall-of-fame.html" aria-current="page">Hall of Fame</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle dark theme">◐</button>
+        <a class="btn btn-secondary" href="resources.html#mock">Free Mock Test</a>
+        <a class="btn btn-primary" href="contact.html">Enroll Now</a>
+        <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container hof-hero">
+        <img src="assets/logo.png" alt="GasshCode Academy logo" width="72" height="72">
+        <div>
+          <p class="eyebrow">Hall of Fame</p>
+          <h1>Our Selections</h1>
+          <p class="lead">Students from GasshCode Academy who made it. Light through logic.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="hof-filters" role="group" aria-label="Filter selections by category">
+          <button type="button" class="hof-filter is-active" data-filter="all" aria-pressed="true">All <span class="hof-count">10</span></button>
+          <button type="button" class="hof-filter" data-filter="open" aria-pressed="false">Open Merit <span class="hof-count">5</span></button>
+          <button type="button" class="hof-filter" data-filter="reserved" aria-pressed="false">Reserved Quotas <span class="hof-count">2</span></button>
+          <button type="button" class="hof-filter" data-filter="self" aria-pressed="false">Self-Finance <span class="hof-count">3</span></button>
+        </div>
+        <ul class="hof-grid" id="hof-grid" aria-live="polite">
+          <li class="hof-card" data-category="open">
+            <div class="hof-avatar hof-open" aria-hidden="true">MK</div>
+            <div class="hof-info">
+              <h3>Malik Sadaf Khurshid</h3>
+              <p><span class="hof-badge hof-badge-open">Open Merit</span></p>
+            </div>
+          </li>
+          <li class="hof-card" data-category="open">
+            <div class="hof-avatar hof-open" aria-hidden="true">MD</div>
+            <div class="hof-info">
+              <h3>Mohammad Altaf Dar</h3>
+              <p><span class="hof-badge hof-badge-open">Open Merit</span></p>
+            </div>
+          </li>
+          <li class="hof-card" data-category="open">
+            <div class="hof-avatar hof-open" aria-hidden="true">MO</div>
+            <div class="hof-info">
+              <h3>Mohammad Obaid</h3>
+              <p><span class="hof-badge hof-badge-open">Open Merit</span></p>
+            </div>
+          </li>
+          <li class="hof-card" data-category="open">
+            <div class="hof-avatar hof-open" aria-hidden="true">SR</div>
+            <div class="hof-info">
+              <h3>Soliva Reyaz</h3>
+              <p><span class="hof-badge hof-badge-open">Open Merit</span></p>
+            </div>
+          </li>
+          <li class="hof-card" data-category="open">
+            <div class="hof-avatar hof-open" aria-hidden="true">AS</div>
+            <div class="hof-info">
+              <h3>Aamir Bashir Sofi</h3>
+              <p><span class="hof-badge hof-badge-open">Open Merit</span></p>
+            </div>
+          </li>
+          <li class="hof-card" data-category="reserved">
+            <div class="hof-avatar hof-reserved" aria-hidden="true">YM</div>
+            <div class="hof-info">
+              <h3>Yasmeena Mehraj</h3>
+              <p><span class="hof-badge hof-badge-reserved">Reserved Quotas</span><span class="hof-badge hof-badge-quota">RBA</span></p>
+            </div>
+          </li>
+          <li class="hof-card" data-category="reserved">
+            <div class="hof-avatar hof-reserved" aria-hidden="true">SH</div>
+            <div class="hof-info">
+              <h3>Salik Hamid</h3>
+              <p><span class="hof-badge hof-badge-reserved">Reserved Quotas</span><span class="hof-badge hof-badge-quota">Sports</span></p>
+            </div>
+          </li>
+          <li class="hof-card" data-category="self">
+            <div class="hof-avatar hof-self" aria-hidden="true">AM</div>
+            <div class="hof-info">
+              <h3>Azaan Mir</h3>
+              <p><span class="hof-badge hof-badge-self">Self-Finance</span></p>
+            </div>
+          </li>
+          <li class="hof-card" data-category="self">
+            <div class="hof-avatar hof-self" aria-hidden="true">ZF</div>
+            <div class="hof-info">
+              <h3>Zainab Farheen</h3>
+              <p><span class="hof-badge hof-badge-self">Self-Finance</span></p>
+            </div>
+          </li>
+          <li class="hof-card" data-category="self">
+            <div class="hof-avatar hof-self" aria-hidden="true">SS</div>
+            <div class="hof-info">
+              <h3>Sheikh Shamuss</h3>
+              <p><span class="hof-badge hof-badge-self">Self-Finance</span></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><img class="footer-logo" src="assets/logo.png" alt="GasshCode Academy logo" width="56" height="56"><h3>GasshCode Academy</h3><p>Hazratbal, Srinagar · Offline &amp; online batches.</p></div>
+      <div><h3>Explore</h3><ul><li><a href="courses.html">Programs</a></li><li><a href="demo.html">Demo Class</a></li><li><a href="resources.html">Resources</a></li></ul></div>
+      <div><h3>Admissions</h3><ul><li><a href="contact.html">Inquiry form</a></li></ul></div>
+      <div><h3>Contact</h3><ul><li>+91 96225 19005</li></ul></div>
+    </div>
+    <div class="container social-row" aria-label="GasshCode Academy on social media">
+      <span class="social-label">Follow &amp; connect</span>
+      <a class="social-link" href="https://www.instagram.com/gaashcode_academy" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a class="social-link" href="https://www.youtube.com/@GASSHCODE" target="_blank" rel="noopener noreferrer">YouTube</a>
+      <a class="social-link" href="https://wa.me/919622519005?text=Hi%20GasshCode%20Academy%2C%20I%20want%20to%20enquire%20about%20admissions" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </div>
+    <div class="container legal"><p>© <span id="year"></span> GasshCode Academy.</p></div>
+  </footer>
+  <a class="wa-float" href="https://wa.me/919622519005?text=Hi%20GasshCode%20Academy%2C%20I%20want%20to%20enquire%20about%20admissions" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">WA</a>
+  <div class="drawer" id="mobile-drawer" aria-hidden="true">
+    <div class="drawer-panel">
+      <button class="icon-btn" id="drawer-close" type="button" aria-label="Close menu">✕</button>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Programs</a>
+      <a href="demo.html">Demo Class</a>
+      <a href="about.html">About Us</a>
+      <a href="resources.html">Resources</a>
+      <a href="hall-of-fame.html">Hall of Fame</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="modal" id="lead-modal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="close" id="modal-close" type="button" aria-label="Close">×</button>
+      <h2>Get Free KU Data Science &amp; AI Entrance Study Guide</h2>
+      <form class="form" id="lead-form" data-validate-form>
+        <div><label for="lead-name">Name</label><input id="lead-name" data-validate="text"><div class="error" data-error-for="lead-name"></div></div>
+        <div><label for="lead-email">Email</label><input id="lead-email" data-validate="email"><div class="error" data-error-for="lead-email"></div></div>
+        <div><label for="lead-phone">WhatsApp</label><input id="lead-phone" data-validate="phone"><div class="error" data-error-for="lead-phone"></div></div>
+        <button class="btn btn-primary" type="submit">Unlock guide</button>
+        <p class="success-msg">Thanks — your guide is ready.</p>
+      </form>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+  <script src="js/hall-of-fame.js"></script>
+</body>
+</html>
